@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="inscription" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -7,43 +8,53 @@
             </div>
             <div class="modal-body">
                 <p>
-                <form id="signupform" class="form-horizontal" role="form" method="POST" action="incritpion_validation.php">
+                <form id="singinform" class="form-horizontal" role="form" method="POST" action="modals/inscription_validation.php">
 
-                    <div id="signupalert" style="display:none" class="alert alert-danger">
-                        <p>Error:</p>
-                        <span></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="firstname" class="col-md-3 control-label">Nom</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" name="firstname" placeholder="Nom">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastname" class="col-md-3 control-label">Prenom</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" name="lastname" placeholder="Prenom">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="col-md-3 control-label">Mot de passe</label>
-                        <div class="col-md-9">
-                            <input type="password" class="form-control" name="passwd" placeholder="Mot de passe">
-                        </div>
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="login-nom" type="text" class="form-control" name="nom" value="" placeholder="Nom"/>
                     </div>
 
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="login-prenom" type="text" class="form-control" name="prenom" value="" placeholder="Prenom"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="login-login" type="text" class="form-control" name="login" value="" placeholder="Login"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="login-email" type="email" class="form-control" name="email" value="" placeholder="Email"/>
+                    </div>
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="login-password" type="password" class="form-control" name="password" placeholder="Mot de passe"/>
+                    </div>
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="login-rp_password" type="password" class="form-control" name="rp_password" placeholder="Confirmer mot de passe"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        <input id="login-groupe" type="text" class="form-control" name="groupe" placeholder="Groupe"/>
+                    </div>
                     <div class="form-group">
                         <!-- Button -->
-                        <div class="col-md-offset-3 col-md-9">
-                            <button id="btn-signup" type="button" class="btn btn-success"><i class="icon-hand-right"></i>S'inscrire</button>
+
+                        <div class="col-sm-12 controls">
+                            <input type="submit" id="btn-signin" href="#" class="btn btn-success" value="S'inscrire"/>
                         </div>
+                        <br>
                     </div>
                 </form>
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
             </div>
         </div>
 
