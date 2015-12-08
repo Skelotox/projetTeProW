@@ -30,6 +30,7 @@ $select4 = $db->query("SELECT e.nom FROM enseignant e,soutenance s WHERE e.id_en
               $donnees2 = $select2->fetch();
               $donnees3 = $select3->fetch();
               $donnees4 = $select4->fetch();
+            //lol
         ?>
         <tr>
         <th><?php echo $donnees["nom"]; ?></th>
